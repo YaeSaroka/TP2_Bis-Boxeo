@@ -27,4 +27,11 @@ public static int Menu(int opcion)
     } while(opcion<0 || opcion>5);
     return opcion;
 } 
+public static int GenerarRandom(int desde, int hasta)
+{
+    int num;
+    Random r = new Random();
+    num = r.Next(desde, hasta + 1);
+    return num;
+}
 }

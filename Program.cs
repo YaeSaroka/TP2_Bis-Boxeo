@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 int opcion=0;
 double puntaje_skill1=0,puntaje_skill2=0;
+string name1="", name2="";
 while(opcion!=4)
 {
     opcion=Funciones.Menu(opcion);
@@ -8,22 +9,24 @@ while(opcion!=4)
 switch(opcion)
 {
     case 1:
-    boxeador Box1 =  Agregar_Boxeador(ref puntaje_skill1);
+    boxeador Box1 =  Agregar_Boxeador(ref name1);
+    puntaje_skill1=Box1.ObtenerSkill();
     Console.Clear();
     break;
     case 2:
-    boxeador Box2= Agregar_Boxeador(ref puntaje_skill2);
+    boxeador Box2= Agregar_Boxeador(ref name2);
+    puntaje_skill2=Box2.ObtenerSkill();
     Console.Clear();
     break;
     case 3:
-    break;
+    Pelear(puntaje_skill1, puntaje_skill2, name1,name2);
+    break;   
 }
 }
 
-
-boxeador Agregar_Boxeador(ref double puntajes_skills)
+boxeador Agregar_Boxeador(ref string name)
 {
-    string name= Funciones.IngresarTexto("Ingrese el nombre del boxeador: ");
+    name= Funciones.IngresarTexto("Ingrese el nombre del boxeador: ");
     string country= Funciones.IngresarTexto("Ingrese el país de origen: ");
     int weight= Funciones.IngresarEntero("Ingrese el peso del boxeador: ");
     double punching_power= Funciones.IngresarDouble("Ingrese la potencia de golpes: ");
@@ -32,21 +35,6 @@ boxeador Agregar_Boxeador(ref double puntajes_skills)
     Validar_Entre1y100(legs_speed);
     return new boxeador(name, country,weight,punching_power,legs_speed);
     Console.WriteLine("Se ha creado el boxeador ",name);
-    puntajes_skills=ObtenerSkill(punching_power,legs_speed);
-}
-
-static double ObtenerSkill(double punching_power, double legs_speed)
-{
-    int num_aletorio=GenerarRandom(1,10);
-    double total_skill= (punching_power*0.8)+(legs_speed*0.6)+num_aletorio;
-    return total_skill;
-} 
-static int GenerarRandom(int desde, int hasta)
-{
-    int num;
-    Random r = new Random();
-    num = r.Next(desde, hasta + 1);
-    return num;
 }
 void Validar_Entre1y100(double atributo)
 {
@@ -55,15 +43,25 @@ void Validar_Entre1y100(double atributo)
         atributo=Funciones.IngresarDouble("-ERROR- La potencia de los golpes debe ser entre 1 y 100. Por favor, Ingrese nuevamente");
     }
 }
-void Pelear(double puntaje_skill1, double puntaje_skill2)
+void Pelear(double puntaje_skill1, double puntaje_skill2, string name1, string name2)
 {
     double diferencia = puntaje_skill1-puntaje_skill2;
     diferencia = System.Math.Abs(diferencia);
-    if(puntaje_skill1>puntaje_skill2)
+    Console.WriteLine(puntaje_skill1);
+    if(puntaje_skill1==0 || puntaje_skill2==0)
     {
-        if(diferencia >= 30)
-        {
-
-        }
+        Console.WriteLine("Debe ingresar valores para pelear");
+    }
+    else if(puntaje_skill1>puntaje_skill2)
+    {
+        if(diferencia >= 30 )Console.WriteLine($"Ganó {name1} por KO");
+        else if(diferencia>=10 && diferencia<30)Console.WriteLine($"Ganó {name1} por puntos en fallo unánime");
+        else Console.WriteLine($"Ganó {name1} por puntos en fallo dividido");
+    }
+    else
+    {
+        if(diferencia >= 30 )Console.WriteLine($"Ganó {name2} por KO");
+        else if(diferencia>=10 && diferencia<30)Console.WriteLine($"Ganó {name2} por puntos en fallo unánime");
+        else Console.WriteLine($"Ganó {name2} por puntos en fallo dividido");
     }
 }
