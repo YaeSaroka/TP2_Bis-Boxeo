@@ -1,0 +1,15 @@
+Z:\ORT2023\Programación\1bimestre\TPS\TP2-Bis-Boxeo-LoIacono-Saroka\bin\Debug\net7.0\TP2-Bis-Boxeo-LoIacono-Saroka.exe
+Z:\ORT2023\Programación\1bimestre\TPS\TP2-Bis-Boxeo-LoIacono-Saroka\bin\Debug\net7.0\TP2-Bis-Boxeo-LoIacono-Saroka.deps.json
+Z:\ORT2023\Programación\1bimestre\TPS\TP2-Bis-Boxeo-LoIacono-Saroka\bin\Debug\net7.0\TP2-Bis-Boxeo-LoIacono-Saroka.runtimeconfig.json
+Z:\ORT2023\Programación\1bimestre\TPS\TP2-Bis-Boxeo-LoIacono-Saroka\bin\Debug\net7.0\TP2-Bis-Boxeo-LoIacono-Saroka.dll
+Z:\ORT2023\Programación\1bimestre\TPS\TP2-Bis-Boxeo-LoIacono-Saroka\bin\Debug\net7.0\TP2-Bis-Boxeo-LoIacono-Saroka.pdb
+Z:\ORT2023\Programación\1bimestre\TPS\TP2-Bis-Boxeo-LoIacono-Saroka\obj\Debug\net7.0\TP2-Bis-Boxeo-LoIacono-Saroka.csproj.AssemblyReference.cache
+Z:\ORT2023\Programación\1bimestre\TPS\TP2-Bis-Boxeo-LoIacono-Saroka\obj\Debug\net7.0\TP2-Bis-Boxeo-LoIacono-Saroka.GeneratedMSBuildEditorConfig.editorconfig
+Z:\ORT2023\Programación\1bimestre\TPS\TP2-Bis-Boxeo-LoIacono-Saroka\obj\Debug\net7.0\TP2-Bis-Boxeo-LoIacono-Saroka.AssemblyInfoInputs.cache
+Z:\ORT2023\Programación\1bimestre\TPS\TP2-Bis-Boxeo-LoIacono-Saroka\obj\Debug\net7.0\TP2-Bis-Boxeo-LoIacono-Saroka.AssemblyInfo.cs
+Z:\ORT2023\Programación\1bimestre\TPS\TP2-Bis-Boxeo-LoIacono-Saroka\obj\Debug\net7.0\TP2-Bis-Boxeo-LoIacono-Saroka.csproj.CoreCompileInputs.cache
+Z:\ORT2023\Programación\1bimestre\TPS\TP2-Bis-Boxeo-LoIacono-Saroka\obj\Debug\net7.0\TP2-Bis-Boxeo-LoIacono-Saroka.dll
+Z:\ORT2023\Programación\1bimestre\TPS\TP2-Bis-Boxeo-LoIacono-Saroka\obj\Debug\net7.0\refint\TP2-Bis-Boxeo-LoIacono-Saroka.dll
+Z:\ORT2023\Programación\1bimestre\TPS\TP2-Bis-Boxeo-LoIacono-Saroka\obj\Debug\net7.0\TP2-Bis-Boxeo-LoIacono-Saroka.pdb
+Z:\ORT2023\Programación\1bimestre\TPS\TP2-Bis-Boxeo-LoIacono-Saroka\obj\Debug\net7.0\TP2-Bis-Boxeo-LoIacono-Saroka.genruntimeconfig.cache
+Z:\ORT2023\Programación\1bimestre\TPS\TP2-Bis-Boxeo-LoIacono-Saroka\obj\Debug\net7.0\ref\TP2-Bis-Boxeo-LoIacono-Saroka.dll
